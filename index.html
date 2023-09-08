@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <title>MercurioMC</title>
     <style>
         /* Reset some default styles for consistency */
         body, h1, p {
@@ -11,41 +11,50 @@
             padding: 0;
         }
 
-        /* Set a background color and text color */
+        /* Set a dark text color */
         body {
-            background-color: #f0f0f0;
+            color: #fff;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('background.png'); /* Set the background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
-        /* Create a container for your content */
+        /* Create a container for your content with a dark background */
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            width: 45%;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
 
         /* Style the header */
         header {
-            text-align: center;
             padding: 20px 0;
         }
 
-        /* Style the heading */
+        /* Style the heading with a light text color */
         h1 {
             font-size: 36px;
-            color: #333;
+            color: #fff;
+            margin-bottom: 20px;
         }
 
-        /* Style the paragraph */
+        /* Style the paragraph with a light text color */
         p {
             font-size: 18px;
-            color: #666;
+            color: #fff;
+            margin-bottom: 20px;
         }
 
-        /* Style the call-to-action button */
+        /* Style the call-to-action button with a dark background */
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
@@ -55,20 +64,124 @@
             font-size: 18px;
             border-radius: 5px;
             transition: background-color 0.3s;
+            margin-right: 10px;
         }
 
         .cta-button:hover {
             background-color: #0056b3;
         }
+
+        /* Style the additional buttons with dark backgrounds */
+        .secondary-button, .success-button, .danger-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        .secondary-button {
+            background-color: #555;
+        }
+
+        .secondary-button:hover {
+            background-color: #333;
+        }
+
+        .success-button {
+            padding: 200px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1px;
+            border-radius: 1px;
+            margin-right: 1px;
+        }
+
+        .success-button:hover {
+            padding: 200px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1px;
+            border-radius: 1px;
+            margin-right: 1px;
+        }
+
+        .danger-button {
+            background-color: #dc3545;
+        }
+
+        .danger-button:hover {
+            background-color: #b92a37;
+        }
+		img.rounded-logo {
+		border-radius: 20px;
+		width: 25vw;
+		}
+		.opbedwars-btn {
+            color: #fc5454;
+		}
+		.survival-btn {
+            color: #54fc54;
+		}
+		.bigboy {
+            color: #8e51ff;
+		}
+		.consiglio {
+            color: #fcc754;
+		}
+		.ospitiamo {
+            color: #808080;
+		}
+		.cliccasu {
+            color: #ff8000;
+		}
+		.benvenuto {
+            background-image: url('background.png'); /* Set the background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+		    border-radius: 5px;
+            
+		}
+		
+		
+        /* Style the social media buttons */
+        .social-media-buttons {
+            margin-top: 20px;
+        }
+
+        .social-media-buttons img {
+            width: 30px; /* Adjust the size of the social media icons */
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
     </style>
 </head>
 <body>
+<a href="http://itiscopernico.it/" target="_blank" class="success-button"></a>
     <div class="container">
         <header>
-            <h1>Welcome to Our Landing Page</h1>
+            <h1 class="benvenuto">Benvenuto sul sito ufficiale di MercurioMC!</h1>
         </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec metus eu elit tristique cursus.</p>
-        <a href="#" class="cta-button">Learn More</a>
+		<img src="logomercurio.png" class="rounded-logo"></img>
+		<h1></h1>
+		<p class="bigboy"><b>>>> Il server Minecraft interamente personalizzabile da VOI! <<<</b></p>
+		<p class="ospitiamo"><b>Attualmente ospitiamo <a href="opbedwars/" class="opbedwars-btn">OP BedWars</a></b> e <a href="survival/" class="survival-btn">Survival</a><b>!</b></p>
+		<p class="consiglio">Consiglateci sui social cosa aggiungere!</p>
+		<p class="cliccasu">Clicca <b>Scopri di Più</b> per saperne di più, oppure clicca <b>Chi Siamo?</b> per sapere chi ha lavorato dietro a questo fantastico progetto!</p>
+        <a href="more/" class="cta-button">Scopri di più</a>
+        <a href="chi-siamo/" class="secondary-button">Chi Siamo?</a>
+        <div class="social-media-buttons">
+            <a href="https://tiktok.com/@mercuriomc" target="_blank"><img src="tiktok.png" alt="TikTok"></a>
+            <a href="https://t.me/mercuriomc" target="_blank"><img src="telegram.png" alt="Telegram"></a>
+			<a href="https://mercuriomc.fandom.com/it" target="_blank"><img src="fandom.png" alt="Wiki"></a>
+        </div>
     </div>
 </body>
+<a href="http://itiscopernico.it/" target="_blank" class="success-button"></a>
 </html>
